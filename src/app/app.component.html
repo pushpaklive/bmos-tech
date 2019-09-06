@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/atllab" (click)="goToAtl()"
+        >Atal Tinkering Lab</a
+      >
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+        >Workshops & Trainings</a
+      >
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Robotics</a>
+        <a class="dropdown-item" href="#">PCB Design</a>
+        <a class="dropdown-item" href="#">Embedded System</a>
+        <a class="dropdown-item" href="#">IoT</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/services">Services</a>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
